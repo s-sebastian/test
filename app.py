@@ -16,6 +16,7 @@ async def handle_injected_header(request: web.Request) -> web.Response:
     response = web.Response(text="This response contains an injected header.")
     # CRLF injection to simulate smuggled header:
     response.headers["X-Injection"] = "value\r\nInjected-Header: evil"
+    response.set_cookie("sessionid", "1")
     return response
 
 
