@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@lingui/cli": "^3.13.3",
+    "react-scripts": "^5.0.1"
+  }
+}
